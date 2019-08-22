@@ -5,5 +5,5 @@
 !/log/.keep
 /tmp
 .idea
-.idea/workspace.xml
+.idea/*
 public/assets
