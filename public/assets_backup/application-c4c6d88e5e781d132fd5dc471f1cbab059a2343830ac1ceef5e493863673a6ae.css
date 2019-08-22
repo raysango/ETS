@@ -9190,59 +9190,15 @@ button.close {
   }
 }
 
-@media print {
-  /* line 2, app/assets/stylesheets/print.scss */
-  .modal-sm {
-    display: none;
-  }
-  /* line 6, app/assets/stylesheets/print.scss */
-  div.columns {
-    display: table !important;
-    position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    float: left;
-  }
-  /* line 14, app/assets/stylesheets/print.scss */
-  .small-4 {
-    max-width: 193pt;
-  }
-  /* line 18, app/assets/stylesheets/print.scss */
-  .small-6 {
-    max-width: 290pt;
-  }
-  /* line 22, app/assets/stylesheets/print.scss */
-  fieldset {
-    margin: 5pt;
-  }
-  /* line 26, app/assets/stylesheets/print.scss */
-  thead {
-    background-color: #cccccc !important;
-    -webkit-print-color-adjust: exact;
-  }
-  /* line 31, app/assets/stylesheets/print.scss */
-  .dynamic tr:nth-child(even) {
-    background-color: #f9f9f9 !important;
-    -webkit-print-color-adjust: exact;
-  }
-  @page {
-    size: auto !important;
-    /* auto is the initial value */
-    margin: .5pt !important;
-    margin-top: 14pt !important;
-    margin-bottom: 14pt !important;
-    page-break-after: avoid !important;
-  }
-  /* line 44, app/assets/stylesheets/print.scss */
-  label {
-    display: block;
-  }
-}
-
-/* line 1, app/assets/stylesheets/patients.scss */
+/* line 1, app/assets/stylesheets/patients.css.scss */
 .print-link {
   float: right;
   margin-right: 5%;
+}
+
+/* line 5, app/assets/stylesheets/patients.css.scss */
+.table-bordered {
+  margin-top: 25px;
 }
 
 /*
