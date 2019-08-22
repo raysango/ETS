@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84a4630b-5b31-4add-aa80-23b8f1cd5e42" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/patients_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/patients_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/diagnosis.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/diagnostic_procedure.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/medication.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/observation.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/order_frequency.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/symptom.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/treatment.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/ets_layout.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/patients/generate_ets.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/patients/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ETS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ETS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/70e243e9-7137-45ba-a6cb-dc92fa87699a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/70e243e9-7137-45ba-a6cb-dc92fa87699a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/admission.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/admission.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/patient.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/patient.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20190817181938_create_patient.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190817181938_create_patient.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -77,20 +52,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="patient.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/patient.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="medication.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="medication.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/medication.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -229,6 +204,7 @@
         <option value="$PROJECT_DIR$/app/models/treatment.rb" />
         <option value="$PROJECT_DIR$/app/models/observation.rb" />
         <option value="$PROJECT_DIR$/app/models/diagnostic_procedure.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -489,12 +465,12 @@
       <option name="presentableId" value="Default" />
       <updated>1566061057895</updated>
       <workItem from="1566061060643" duration="591000" />
-      <workItem from="1566061685155" duration="65099000" />
+      <workItem from="1566061685155" duration="65430000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65690000" />
+    <option name="totallyTimeSpent" value="66021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -503,9 +479,9 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.32893" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31175694" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31175694" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" weight="0.32893" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" visible="true" weight="0.32893" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
@@ -534,13 +510,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://70e243e9-7137-45ba-a6cb-dc92fa87699a/schema/main/table/admissions">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://70e243e9-7137-45ba-a6cb-dc92fa87699a/schema/main/table/patients_allergies">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -881,6 +850,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
