@@ -6,8 +6,11 @@ class CreatePatient < ActiveRecord::Migration[6.0]
       t.string :last_name
       t.string :mr
       t.datetime :dob
-      t.string :gender
-      t.references :admission
+      t.integer :gender, default: 0
     end
+  end
+
+  def down
+    drop_table :patients
   end
 end

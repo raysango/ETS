@@ -1,0 +1,32 @@
+<div class="header">
+  <a href="#" class="btn btn-success print-link" onclick="window.print();return false;">
+    <span class="glyphicon glyphicon-print"></span> Print
+  </a>
+  <h4><strong>Emergency Transfer Summary (Form 34L-D)</strong></h4>
+</div>
+
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th colspan=4 scope="col" width="100%">Transferring Facility</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td scope="row">Name<br><br><%= @facility.name %></td>
+  </tr>
+  <tr>
+    <th colspan=4 scope="col" width="100%">Patient Information</th>
+  </tr>
+  <tr>
+    <td scope="row">First Name<br><br><%= @patient.first_name %></td>
+    <td scope="row">Middle Name<br><br><%= @patient.middle_name %></td>
+    <td scope="row">Last Name<br><br><%= @patient.last_name %></td>
+    <td scope="row">Medical Record<br>(MR)<br><br><%= @patient.mr %></td>
+  </tr>
+  <tr>
+    <th colspan=4 scope="col" width="100%">Summary<br><br>
+    <span style="font-weight: normal"><%= patient_ets_summary(@patient, @facility) %></span></th>
+  </tr>
+  </tbody>
+</table>

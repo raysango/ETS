@@ -1,0 +1,22 @@
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">Name</th>
+    <th scope="col">DOB</th>
+    <th scope="col">(MR)</th>
+    <th scope="col">Gender</th>
+    <th scope="col"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @patients.each do |patient| %>
+    <tr>
+      <th scope="row"><%= patient.full_name %></th>
+      <td><%= patient.dob.strftime('%b %d, %Y') %></td>
+      <td><%= patient.mr %></td>
+      <td><%= patient.gender.capitalize %></td>
+      <td><%= link_to "Generate ETS", generate_ets_patient_path(patient), target: '_blank' ,class: 'btn btn-success active' %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

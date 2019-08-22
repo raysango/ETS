@@ -1,0 +1,47 @@
+@media print {
+  .sub-nav, .add-row, .save-form {
+    display: none;
+  }
+
+  div.columns {
+    display: table !important;
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left;
+  }
+
+  .small-4 {
+    max-width: 193pt;
+  }
+
+  .small-6 {
+    max-width: 290pt;
+  }
+
+  fieldset {
+    margin: 5pt;
+  }
+
+  thead {
+    background-color: #cccccc !important;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .dynamic tr:nth-child(even) {
+    background-color: #f9f9f9 !important;
+    -webkit-print-color-adjust: exact;
+  }
+
+  @page {
+    size: auto !important;   /* auto is the initial value */
+    margin: .5pt !important;
+    margin-top: 14pt !important;
+    margin-bottom: 14pt !important;
+    page-break-after: avoid !important;
+  }
+
+  label {
+    display: block;
+  }
+}
