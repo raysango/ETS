@@ -6,7 +6,7 @@ class PatientsController < ApplicationController
 
   def generate_ets
     @patient = Patient.find(params[:id])
-    @facility = Facility.last
+    @facility = Facility.last # Example Facility to test ETS Form
     render layout: 'ets_layout'
   end
 end
