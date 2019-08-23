@@ -9,14 +9,18 @@
   </tr>
   </thead>
   <tbody>
-  <% @patients.each do |patient| %>
-    <tr>
-      <th scope="row"><%= patient.full_name %></th>
-      <td><%= patient.dob.strftime('%b %d, %Y') %></td>
-      <td><%= patient.mr %></td>
-      <td><%= patient.gender.capitalize %></td>
-      <td><%= link_to "Generate ETS", generate_ets_patient_path(patient), target: '_blank' ,class: 'btn btn-success active' %></td>
-    </tr>
+  <% if @patients.present? %>
+    <% @patients.each do |patient| %>
+      <tr>
+        <td><%= patient.full_name %></td>
+        <td><%= patient.dob.strftime('%b %d, %Y') %></td>
+        <td><%= patient.mr %></td>
+        <td><%= patient.gender.capitalize %></td>
+        <td><%= link_to "Generate ETS", generate_ets_patient_path(patient), target: '_blank' ,class: 'btn btn-success active' %></td>
+      </tr>
+    <% end %>
+  <% else %>
+    <tr><td>No patients available.</td></tr>
   <% end %>
   </tbody>
 </table>

@@ -33,6 +33,10 @@ class Admission < ActiveRecord::Base
     "to #{treatments.map{|treatment| "#{treatment.description} to #{treatment.necessity}"}.to_sentence}"
   end
 
+  def get_moment_text
+    "#{moment.strftime('%b %d, %Y')} at #{moment.strftime('%H:%M %P')}"
+  end
+
 
 
 end
