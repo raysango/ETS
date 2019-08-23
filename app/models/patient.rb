@@ -1,10 +1,9 @@
 class Patient < ActiveRecord::Base
   belongs_to :admission
   has_many :admissions # I think a patient can have multiple admissions
-  has_many :patients_allergies, :foreign_key => 'patient_id', :dependent => :delete_all # allergies are common between patients so I'm using a joint table
+  has_many :patients_allergies, :foreign_key => 'patient_id', :dependent => :delete_all # allergies are common between patients so I'm using a join table
   has_many :allergies, through: :patients_allergies
   has_many :diagnoses, as: :owner
-  # alias_attribute :chronic_conditions, :diagnoses
   has_many :medications, through: :admission
   has_many :diagnostic_procedures, through: :admission
   has_many :patient_diagnoses, through: :diagnostic_procedures, source: :diagnoses
