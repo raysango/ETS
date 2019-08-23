@@ -28,7 +28,6 @@ feature "Ets page" do
     expect(page).to have_content(facility_x.name)
     expect(page).to have_content(patient_x.first_name)
     expect(page).to have_content(patient_x.last_name)
-    sleep 5
     expect(page).to have_content("Print")
     expect(page).to have_content("This #{patient_x.patient_age} years old #{patient_x.gender} was admitted to #{facility_x.name} emergency facility on #{admission_x.get_moment_text} due to Unavailable diagnoses. The observed symptoms on admission were Unavailable. No observations available.
 
