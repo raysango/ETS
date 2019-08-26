@@ -1,19 +1,14 @@
 # Add option to print ETS form for each patient
+Setup steps:<br>
+
+ruby version is 2.6.3<br>
+rails version is 6.0.0<br>
+
+install all gems: bundle install<br>
+
 Setup db: bundle exec rake db:setup
 
-Create patient record in console:
-Patient model validates presence of first_name, last_name, dob
+To load test patient data run: bundle exec rake patient_data:create
 
-Create admission for patient from the console:
-Admission model validates presence of patient, moment
+Root page routes to patients index page, show a list of all patients, each patient will have a link to generate the ETS form which includes all the patient info and a summary of the patient's medical status
 
-root page routes to pients index page, each patient will have a link to generate the ETS form with the all the patient info and a summary of the patient's medical status
-
-more patient associations rendered in the ETS form summary:
-patient.allergies
-patient.diagnoses
-patient.diagnostic_procedures
-patient.patient_diagnoses
-patient.medications
-patient.treatments
-admission.observations
