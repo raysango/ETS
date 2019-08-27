@@ -12,11 +12,6 @@ class Patient < ActiveRecord::Base
   validates_presence_of :first_name, :last_name, :dob, :gender
   validate :dob_in_the_past
 
-  #get latest patient admission
-  # def admission
-  #   admissions.order("moment DESC").limit(1).last
-  # end
-
   def full_name
     [first_name, middle_name, last_name].compact.join(" ")
   end
