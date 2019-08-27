@@ -7,6 +7,7 @@ class Admission < ActiveRecord::Base
   has_many :medications
   has_many :treatments
   has_many :diagnostic_procedures
+  after_create :update_patient
 
   def get_patient_diagnoses_text
     return "Unavailable diagnoses" unless diagnoses.present?
@@ -35,6 +36,10 @@ class Admission < ActiveRecord::Base
 
   def get_moment_text
     "#{moment.strftime('%b %d, %Y')} at #{moment.strftime('%H:%M %P')}"
+  end
+
+  def update_patient
+    patient.update_column(:admission_id, self.id)
   end
 
 

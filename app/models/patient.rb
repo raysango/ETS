@@ -13,9 +13,9 @@ class Patient < ActiveRecord::Base
   validate :dob_in_the_past
 
   #get latest patient admission
-  def admission
-    admissions.order("moment DESC").limit(1).last
-  end
+  # def admission
+  #   admissions.order("moment DESC").limit(1).last
+  # end
 
   def full_name
     [first_name, middle_name, last_name].compact.join(" ")
@@ -58,4 +58,7 @@ class Patient < ActiveRecord::Base
     end
   end
 
+  def datetime_formatted(time)
+    "#{time.strftime('%b %d, %Y')} at #{time.strftime('%H:%M %P')}"
+  end
 end

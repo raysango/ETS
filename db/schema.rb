@@ -74,7 +74,9 @@ ActiveRecord::Schema.define(version: 2019_08_18_062114) do
     t.string "last_name"
     t.string "mr"
     t.datetime "dob"
+    t.integer "admission_id"
     t.integer "gender", default: 0
+    t.index ["admission_id"], name: "index_patients_on_admission_id"
   end
 
   create_table "patients_allergies", id: false, force: :cascade do |t|

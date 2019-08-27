@@ -10,8 +10,4 @@ module PatientsHelper
     The staff performed #{patient.get_diagnostic_procedures_text}, revealing #{patient.get_patient_diagnoses_text}. Our
     team proceeded #{admission.get_treatments_text}.".html_safe
   end
-
-  def datetime_formatted(time)
-    "#{time.strftime('%b %d, %Y')} at #{time.strftime('%H:%M %P')}"
-  end
 end
